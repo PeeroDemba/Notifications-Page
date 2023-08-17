@@ -1,0 +1,179 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: hsl(205, 33%, 90%);
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+main {
+  min-height: 50vh;
+  width: 45rem;
+  background-color: white;
+  border-radius: 1rem;
+  margin: auto;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+  padding: 2rem;
+  box-shadow: 0px 15px 0px 10px hsl(211, 68%, 94%), 0px 25px 0px 40px hsl(205, 30%, 92%);
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+button {
+  border: none;
+  color: #777;
+  background-color: white;
+  cursor: pointer;
+}
+button:hover {
+  color: hsl(219, 85%, 26%);
+}
+
+.count {
+  color: white;
+  background-color: hsl(219, 85%, 26%);
+  padding: 0.1rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.unread {
+  display: grid;
+  grid-template-columns: 3.5rem 1fr;
+  gap: 0.2rem;
+  margin-bottom: 0.7rem;
+  background-color: hsl(211, 68%, 94%);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+img {
+  width: 3rem;
+}
+
+.name {
+  color: black;
+  font-weight: 800;
+}
+.name:hover {
+  color: hsl(219, 85%, 26%);
+}
+
+.group {
+  color: hsl(219, 85%, 26%);
+  font-weight: 800;
+}
+
+.post {
+  color: hsl(219, 12%, 42%);
+  font-weight: 800;
+}
+.post:hover {
+  color: hsl(219, 85%, 26%);
+}
+
+.time {
+  color: #aaa;
+}
+
+.reddot {
+  margin-left: 0.2rem;
+  color: red;
+}
+
+.flex {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  color: #888;
+  line-height: 1.3rem;
+}
+
+.nimg {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.read {
+  display: grid;
+  grid-template-columns: 3.5rem 1fr;
+  margin-bottom: 0.7rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.msg {
+  border: 2px solid hsl(211, 68%, 94%);
+  padding: 1rem;
+  margin-top: 0.5rem;
+  border-radius: 0.5rem;
+  line-height: 1.4rem;
+  width: 97%;
+}
+.msg:hover {
+  background-color: hsl(211, 68%, 94%);
+}
+
+.read3 {
+  display: grid;
+  grid-template-columns: 3.5rem 1fr 3.5rem;
+  margin-bottom: 0.7rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 767px) {
+  main {
+    min-height: 50vh;
+    width: 31.25rem;
+    overflow: hidden;
+  }
+  .flex {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+}
+@media (max-width: 500px) {
+  main {
+    min-height: 50vh;
+    width: 22.5rem;
+    padding: 1rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
+}
